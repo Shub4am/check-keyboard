@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", serif;
+  min-height: 100vh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  text-align: center;
+  font-weight: 500;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+div {
+  white-space: pre-wrap;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f7fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboardContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #e6e6e9;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.keyContainer {
+  width: 60px;
+  height: 60px;
+  color: #828183;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  text-transform: capitalize;
+
+  :hover {
+    font-weight: 500;
+  }
+}
+
+.tabkey {
+  width: 92px;
+}
+
+.numbers,
+.tabs {
+  gap: 8px;
+}
+
+.capskey {
+  width: 122px;
+}
+
+.caps {
+  gap: 6.8px;
+}
+
+.specialKey {
+  width: 144px;
+}
+
+.bottomRow .specialKey {
+  width: 424px;
+}
+
+.directionalRow .keyContainer {
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.word {
+  font-size: larger;
+}
+
+.functionKeys .keyContainer {
+  width: 60px;
+  height: 30px;
+}
+
+.functionKeys {
+  gap: 13px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+.num-sign {
+  display: flex;
+}
+
+.keyContainer.active {
+  background-color: lime;
+}
+
+.directionalRow {
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.directionalRow .keyContainer {
+  width: 60px;
+  height: 60px;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  padding: 20px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #c2c0c2;
+  font-size: larger;
+  font-weight: 300;
+}
+
+.keybs {
+  background-color: aqua;
+}
+
+.working-keys {
+  background-color: lime;
+}
+
+.not-working {
+  background-color: crimson;
+  color: #e6e6e9;
+}
